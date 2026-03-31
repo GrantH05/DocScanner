@@ -1,11 +1,11 @@
-#DocScanner
+# DocScanner
 
 A Python-based **Document Scanner with OCR (Optical Character Recognition)** that detects document edges from an image or webcam feed, applies perspective correction, enhances the image, and extracts text using **Tesseract OCR**.
 
 This project simulates the functionality of a real document scanner and converts physical documents into editable digital text.
 
 
-##Features
+## Features
 
 - Scan documents from an **image file**
 - Scan documents using **live webcam**
@@ -17,7 +17,7 @@ This project simulates the functionality of a real document scanner and converts
 - Live preview with contour detection
 
 
-##Tech Stack
+## Tech Stack
 
 - **Python**
 - **OpenCV**
@@ -27,7 +27,7 @@ This project simulates the functionality of a real document scanner and converts
 - **Imutils**
 
 
-##Requirements
+## Requirements
 
 Install the required Python packages:
 
@@ -35,16 +35,16 @@ Install the required Python packages:
 pip install opencv-python numpy pytesseract Pillow imutils
 ```
 
-##Install Tesseract OCR
+## Install Tesseract OCR
 
 You must install the **Tesseract OCR engine** separately.
 
-###Ubuntu / Debian
+### Ubuntu / Debian
 ```bash
 sudo apt install tesseract-ocr
 ```
 
-###Windows
+### Windows
 Download from: 
 https://github.com/UB-Mannheim/tesseract/wiki
 
@@ -54,24 +54,24 @@ After installation, set the path inside the code if needed:
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 ```
 
-###macOS
+### macOS
 ```bash
 brew install tesseract
 ```
 
-##Usage
+## Usage
 
-###Scan from Image
+### Scan from Image
 ```bash
 python doc_scanner.py --image path/to/photo.jpg
 ```
 
-###Scan from Webcam
+### Scan from Webcam
 ```bash
 python doc_scanner.py --webcam
 ```
 
-###Save Extracted Text
+### Save Extracted Text
 ```bash
 python doc_scanner.py --image photo.jpg --output result.txt
 ```
